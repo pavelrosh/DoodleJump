@@ -23,7 +23,7 @@ public class LevelGenerator : MonoBehaviour {
 			spawnPosition.x = Random.Range(-levelWidth, levelWidth);
 			if (i > 11 && i % 15 == 0)
 				Instantiate(power_platform, spawnPosition, Quaternion.identity);
-			else if (i > 21 && i % 10 == 0)
+			else if (i > 21 && i % 25 == 0)
 				Instantiate(bad_platform, spawnPosition, Quaternion.identity);
 			else
 				Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
